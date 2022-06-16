@@ -55,7 +55,7 @@ app.get('/api/notes', (req, res) => {
 app.post('/api/notes', (req, res) => {
     console.info(`${req.method} request received to add a note`);
 
-    const { title, text } = req.body;
+    const { title, text, id } = req.body;
 
     if (req.body) {
         const newNote = {
@@ -70,8 +70,34 @@ app.post('/api/notes', (req, res) => {
     }
 });
 
+//delete chosen note using delete http method
+app.delete("/api/notes/:id", (req, res) => {
+    console.log(req);
+    let deleteNote = JSON.parse(req.params.id);
+    console.log("ID to be deleted: ", deleteNote);
+    fs.readFile(path.join(__dirname, "./db/notes.json"), "utf8", (error, notes) => {
+        if (error) {
+            return console.log(error)
+        }
+        let noteArray = JSON.parse(notes);
+        for (var i = 0; i < notesArray.length; i++) {
+            if (deleteNote == noteArray[i].id) {
+                noteArray.splice(i, 1);
+
+                fs.writeFile(path.join(__dirname, "./db/db.json"), JSON.stringify(noteArray), (error, data) => {
+                    if (error) {
+                        return error
+                    }
+                    console.log(noteArray)
+                    res.json(noteArray);
+                })
+            }
+        }
+
+    });
+});
 
 // Listener
 app.listen(PORT, () => {
-    console.log(`App listening at http://localhost:${PORT} 🚀${PORT}!`);
+    console.log(`App listening at http://localhost:${PORT} 🚀!`);
 });

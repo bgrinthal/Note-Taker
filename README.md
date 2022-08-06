@@ -36,7 +36,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img width="1436" alt="Screen Shot 2022-05-26 at 9 37 35 AM" src="https://user-images.githubusercontent.com/105067005/171315289-ef92fdfb-3dd5-4d09-a145-b33b0e6e13ab.png">
+<img width="1440" alt="Screen Shot 2022-08-06 at 5 17 16 PM" src="https://user-images.githubusercontent.com/105067005/183266336-50558f32-0deb-4b9f-89c4-516a0bdcec79.png">
+
+<img width="1440" alt="Screen Shot 2022-08-06 at 5 18 33 PM" src="https://user-images.githubusercontent.com/105067005/183266355-6fb95113-2857-46da-985e-89377b45f451.png">
+
 
 Note taking application that allows user to jot down a note title and body, to be saved for later reference.  Once created, each note can be modified or deleted based on user need.  This application uses HTML, CSS, and JavaScript as well as express.js as the routing framework from the backend, Node.js. 
 

@@ -44,6 +44,7 @@ Note taking application that allows user to jot down a note title and body, to b
 
 ### Built With
 
+[![Bootstrap][Bootstrap.com]][Bootstrap-url]
 [![Express][Express.com]][Express-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -57,12 +58,21 @@ Run node index.js in the repository command line
 
 ### Prerequisites
 
-NA
+* npm
+  ```sh
+  npm install express
+  ```
   
-
 ## Installation
 
-NA
+1. Clone the repo
+   ```sh
+   git clone https://github.com/bgrinthal/Note-Taker.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
    
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -72,7 +82,7 @@ NA
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Once the application is running, simply input the city you would like to see the local weather for.  From there, you can navigate your recent seraches and view the 5 day forcast as well.
+Once the application is running, follow prompts to add, edit, and remove notes.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,7 +119,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Ben Grinthal - [@bgrinthal](https://github.com/bgrinthal) - bgrinthal@gmail.com
 
-Project Link: [https://github.com/bgrinthal/Weather-Tracker](https://github.com/bgrinthal/Weather-Tracker)
+Project Link: [https://github.com/bgrinthal/Note-Taker](https://github.com/bgrinthal/Note-Taker)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,7 +130,6 @@ Project Link: [https://github.com/bgrinthal/Weather-Tracker](https://github.com/
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
-* [Google Fonts](https://fonts.google.com/)
 * [Font Awesome](https://fontawesome.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
